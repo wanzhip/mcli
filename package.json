@@ -1,0 +1,27 @@
+{
+    "name": "my-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --watch src -e ts --exec ts-node src/index.ts",
+        "watch": "nodemon --watch src -e ts --exec tsc"
+    },
+    "bin": {
+        "mcli": "dist/src/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^17.0.12",
+        "chalk": "^4.1.2",
+        "commander": "^8.3.0",
+        "inquirer": "^8.2.0",
+        "jQuery": "^1.7.4",
+        "nodemon": "^2.0.15",
+        "rxjs": "^7.5.2",
+        "shelljs": "^0.8.4",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.4"
+    }
+}
